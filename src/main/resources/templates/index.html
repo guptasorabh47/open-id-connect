@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Security - OAuth 2.0 Login</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h1 th:if="${currentUser != null}">
+    Hello, <span th:text="${currentUser.principal.attributes['email']}">foo@example.com</span>!
+</h1>
+</body>
+</html>
+</html>
